@@ -1,4 +1,3 @@
-os
-leafmap.foliumap 
 streamlit
+leafmap
 requests
