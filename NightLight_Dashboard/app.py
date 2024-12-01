@@ -17,7 +17,7 @@ gcs_bucket = 'https://storage.googleapis.com/spatialthoughts-public-data/ntl/vii
 cog_url = os.path.join(gcs_bucket, 'viirs_ntl_2021_global.tif')
 
 # API key for OpenRouteService
-ORS_API_KEY = '5b3ce3597851110001cf62486c10b63dd3eb44d38ca7bae187e107cc'
+ORS_API_KEY = st.secrets['ORS_API_KEY']
 
 # Geocoding function
 @st.cache_data
