@@ -14,7 +14,8 @@ st.sidebar.info('Explore the Night Lights using an address.')
 
 # COG URL for night light data
 gcs_bucket = 'https://storage.googleapis.com/spatialthoughts-public-data/ntl/viirs/'
-cog_url = os.path.join(gcs_bucket, 'viirs_ntl_2021_global.tif')
+cog_url = gcs_bucket + 'viirs_ntl_2021_global.tif'
+
 
 # API key for OpenRouteService
 ORS_API_KEY = st.secrets['ORS_API_KEY']
@@ -75,4 +76,3 @@ if address:
         st.sidebar.error('Failed to geocode the address. Please try again.')
 else:
     st.warning('Please enter an address to display the map.')
-
