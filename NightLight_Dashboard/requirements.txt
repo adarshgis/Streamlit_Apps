@@ -2,4 +2,8 @@ streamlit
 leafmap
 requests
 rasterio
+rioxarray
+geopandas
+shapely
+pyproj
 
