@@ -56,7 +56,7 @@ if address:
         # Add COG layer
         m.add_cog_layer(
             cog_url, name='Night Light', titiler_endpoint="https://api.cogeo.xyz", zoom_to_layer=False,
-            rescale='0,60', colormap_name=color_style
+            rescale='0,60', colormap_name=color_style, show_colormap=False
         )
 
         # Calculate bounding box from central point and buffer
@@ -76,3 +76,4 @@ if address:
         st.sidebar.error('Failed to geocode the address. Please try again.')
 else:
     st.warning('Please enter an address to display the map.')
+
